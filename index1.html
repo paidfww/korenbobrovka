@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Өзірлеушіге арналған ЖИ-құралдары</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="themeToggle" class="theme-btn">🌙 Қараңғы тақырып</button>
+
+    <header>
+        <h1>🤖 Өзірлеушіге арналған ЖИ-құралдары</h1>
+        <p>Қазіргі заманғы бағдарламашының көмекшілері</p>
+    </header>
+
+    <main>
+        <section class="cards-section">
+            <h2>Танымал ЖИ-құралдары</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>GitHub Copilot</h3>
+                    <p>GitHub Copilot - код жазуды автоматтандыратын ЖИ-көмекші. VS Code, IntelliJ және басқа редакторлармен біріктіріледі.</p>
+                    <p><strong>Не істей алады:</strong> Функцияларды аяқтау, тесттер жазу, қателерді түзету.</p>
+                    <a href="https://github.com/features/copilot" target="_blank" class="card-link">Ресми сайт →</a>
+                </div>
+                <div class="card">
+                    <h3>ChatGPT</h3>
+                    <p>ChatGPT - OpenAI компаниясының үлкен тілдік моделі. Код жазуға, қателерді түсіндіруге көмектеседі.</p>
+                    <p><strong>Не істей алады:</strong> Кодты түсіндіру, документация жазу, дебаггинг.</p>
+                    <a href="https://chat.openai.com" target="_blank" class="card-link">Ресми сайт →</a>
+                </div>
+                <div class="card">
+                    <h3>Claude</h3>
+                    <p>Claude - Anthropic компаниясының ЖИ-көмекшісі. Үлкен контекстік терезесімен (100k+ токен) танымал.</p>
+                    <p><strong>Не істей алады:</strong> Ұзақ кодтарды талдау, құжаттармен жұмыс.</p>
+                    <a href="https://claude.ai" target="_blank" class="card-link">Ресми сайт →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience-section">
+            <h2>📝 Менің тәжірибем</h2>
+            <div class="experience-content">
+                <p>Мен ChatGPT және GitHub Copilot құралдарын қолданып көрдім. ChatGPT күрделі алгоритмдерді түсіндіруге көп көмектесті. GitHub Copilot кодымды жылдам жазуға мүмкіндік берді.</p>
+                <p><strong>Қандай құрал көмектесті?</strong> ChatGPT ең көп көмектесті, әсіресе JavaScript функцияларын жазуда.</p>
+                <p><strong>ЖИ нені дұрыс/ыңғайсыз жасады?</strong> Код құрылымын дұрыс ұсынды, бірақ кейде ескірген синтаксис берді. Мен оны қолмен түзеттім.</p>
+                <p><strong>ЖИ 5 жылдан кейін?</strong> ЖИ әзірлеушілерді алмастырмайды, керісінше олардың жұмысын жеңілдетеді. Қарапайым тапсырмалар автоматтандырылады.</p>
+            </div>
+        </section>
+
+        <section class="chat-section">
+            <h2>💬 ЖИ-чат көмекші</h2>
+            <p>Сұрағыңызды жазыңыз (демо-режим)</p>
+            
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">Сәлем! Мен демо-чатпын. Сұрағыңызды жазыңыз!</div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="userInput" placeholder="Сұрағыңызды жазыңыз..." class="chat-input">
+                    <button id="sendButton" class="send-btn">Жіберу</button>
+                </div>
+                <div class="chat-stats">
+                    📊 Сұраныстар саны: <span id="requestCount">0</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 | Жасанды интеллект веб-әзірлеуде | Практикалық жұмыс №1</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
